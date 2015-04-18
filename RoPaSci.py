@@ -24,7 +24,7 @@ def game():
     pre_game_message = "You've chosen " + player + \
                       " and Computer has chosen " + cmp
     print(pre_game_message)
-    print("\n.\nResult:\n")
+    print("\nResult:\n")
     #Cases that The Player wins:
     if (player == "Rock") and (cmp == "Scissor") :
         print("You Win!")
