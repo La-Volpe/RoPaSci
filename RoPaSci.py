@@ -26,9 +26,20 @@ def game():
     print(pre_game_message)
     print("\n.\nResult:\n")
     #Cases that The Player wins:
-
+    if (player == "Rock") and (cmp == "Scissor") :
+        print("You Win!")
+    if (player == "Paper") and (cmp == "Rock") :
+        print("You Win!")
+    if (player == "Scissor") and (cmp == "Paper") :
+        print("You Win!")
     #Cases that The Player loses:
-
+    if (cmp == "Rock") and (player == "Scissor") :
+        print("You Lose!")
+    if (cmp == "Paper") and (player == "Rock") :
+        print("You Lose!")
+    if (cmp == "Scissor") and (player == "Paper") :
+        print("You Lose!")
     #Tie Cases:
-
+    if cmp == player :
+        print("Uhhhmmm... It's a tie!")
 game()
